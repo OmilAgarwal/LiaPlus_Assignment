@@ -1,0 +1,57 @@
+{
+    "info": {
+        "_postman_id": "9699cb1f-fbb9-4ea3-a5f3-4cb68d4348f8",
+        "name": "User Feedback System",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Feedback Post Request",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/feedback/",
+                    "path": [
+                        "api",
+                        "v1",
+                        "feedback"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"Random User - 2\",\n  \"email\": \"userhainhum@example.com\",\n  \"text\": \"Example Feedback\",\n  \"category\": \"Suggestion\"\n}"
+                }
+            }
+        },
+        {
+            "name": "FETCH FEEDBACK",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/feedback/",
+                    "path": [
+                        "api",
+                        "v1",
+                        "feedback"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        }
+    ]
+}
